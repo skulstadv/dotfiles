@@ -31,15 +31,19 @@ set foldlevel=99
 nnoremap <space> za
 
 " Indentation and formatting for Python files
-au BufNewFile,BufRead *.py:
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-    \ set nu
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,.vimrc,.bashrc
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+    \ set nu |
+    \ set showcmd |
+    \ set encoding=utf-8 |
+    \ set hls |
+    \ set incsearch
 
 " Pretty code
 let python_highlight_all=1
@@ -51,9 +55,13 @@ else
   colorscheme zenburn
 endif
 
+" Navigate by visual lines, not actual lines
+nnoremap j gj
+nnoremap k gk
+
 " Highlight bad whitespace. First specify color
 highlight BadWhitespace ctermbg=red guibg=darkred
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,.vimrc,.bashrc match BadWhitespace /\s\+$/
 
 " UTF-8 encoding
 set encoding=utf-8
