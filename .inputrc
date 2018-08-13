@@ -1,4 +1,5 @@
 set editing-mode vi
+"\C-i": complete
 $if mode=vi
 
 set keymap vi-command
@@ -9,3 +10,4 @@ set keymap vi-insert
 # these are for vi-insert mode
 Control-l: clear-screen
 $endif
+

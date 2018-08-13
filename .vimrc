@@ -68,6 +68,7 @@ set encoding=utf-8
 
 " System clipboard
 set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Virtualenv support using python3
 py3 << EOF
@@ -78,3 +79,6 @@ if 'VIRTUAL_ENV' in os.environ:
   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
   exec(compile(open(activate_this, "rb").read(), activate_this, 'exec'), dict(__file__=activate_this))
 EOF
+
+" Keep clipboard after exiting vim
+autocmd VimLeave * call system("xsel -ib", getreg('+'))
