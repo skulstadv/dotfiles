@@ -13,5 +13,6 @@ Make sure you have vim with python3 support
 vim --version | grep +python3
 ````
 #### YCM install 
-cd ~/.vim/bundle/YouCompleteMe
-./install.py
+````
+cd ~/.vim/bundle/YouCompleteMe && ./install.py
+````
