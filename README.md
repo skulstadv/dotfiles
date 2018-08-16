@@ -12,12 +12,6 @@ Make sure you have vim with python3 support
 ````
 vim --version | grep +python3
 ````
-Clone Vundle:
-
-    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-Open vim and in command mode write:
-```
-:PluginInstall
-```
-Follow guide:
-https://github.com/Valloric/YouCompleteMe#ubuntu-linux-x64
+#### YCM install 
+cd ~/.vim/bundle/YouCompleteMe
+./install.py
