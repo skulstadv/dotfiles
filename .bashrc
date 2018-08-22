@@ -115,3 +115,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+alias skole='cd ~/Dropbox/Skole/H2018/'
+alias eclipse='/usr/local/bin/eclipse/eclipse'
