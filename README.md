@@ -7,7 +7,7 @@ Dotfiles for vim, tmux and bash
     git clone https://github.com/skulstadv/dotfiles.git && mv dotfiles ~/.dotfiles && ~/.dotfiles/create_symlinks.sh
     vim -c PluginInstall 
     cd ~/.vim/bundle/YouCompleteMe
-./install.py
+    ./install.py
 
 ### Vim configuration
 Make sure you have vim with python3 support
