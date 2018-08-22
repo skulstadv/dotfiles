@@ -117,3 +117,4 @@ if ! shopt -oq posix; then
 fi
 alias skole='cd ~/Dropbox/Skole/H2018/'
 alias eclipse='/usr/local/bin/eclipse/eclipse'
+alias ntnu='sshpass -p $(cat ~/.ssh/feide) ssh vegarns@loginstud01.stud.ntnu.no'
