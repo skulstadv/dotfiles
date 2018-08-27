@@ -30,6 +30,20 @@ set foldlevel=99
 " Spacebar open / close folds
 nnoremap <space> za
 
+" Indentation and formatting for text files
+set tabstop=4 |
+set softtabstop=4 |
+set shiftwidth=4 |
+set textwidth=140 |
+set expandtab |
+set autoindent |
+set fileformat=unix |
+set nonu |
+set showcmd |
+set encoding=utf-8 |
+set hls |
+set incsearch
+
 " Indentation and formatting for Python files
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,.vimrc,.bashrc
     \ set tabstop=4 |

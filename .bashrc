@@ -118,3 +118,7 @@ fi
 alias skole='cd ~/Dropbox/Skole/H2018/'
 alias eclipse='/usr/local/bin/eclipse/eclipse'
 alias ntnu='sshpass -p $(cat ~/.ssh/feide) ssh vegarns@loginstud01.stud.ntnu.no'
+alias ntnu-vpn='cat ~/.ssh/feide | sudo openconnect vpn.ntnu.no -u vegarns
+--passwd-on-stdin'
+alias windows='xfreerdp /u:Admin +clipboard /w:1366 /h:768 /v:10.212.136.52'
+alias vpn='sudo openvpn --config ~/.rotterdam-iara.ovpn'
